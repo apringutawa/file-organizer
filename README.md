@@ -33,4 +33,63 @@ Script Python untuk mengatur file di folder Downloads secara otomatis berdasarka
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/apringutawa/file-organizer.git
-cd file-organizer
+cd file-organizer 
+```
+### 2. Jalankan Script
+``` bash
+python rapikanfile.py
+```
+3. Pilih Opsi
+```text
+🗂️  FILE ORGANIZER SCRIPT
+==================================================
+
+Pilih opsi:
+1. 👀 Preview file yang akan dipindahkan
+2. 🚀 Jalankan organizer (pindahkan file)
+3. ❌ Keluar
+
+Masukkan pilihan (1-3):
+```
+🛠️ Requirements
+```
+Python 3.6 atau lebih baru
+
+Tidak perlu install library tambahan (menggunakan library standar Python)
+```
+📝 Customization
+Anda bisa menambah kategori dengan mengedit bagian categories dalam script:
+
+```python
+categories = {
+    "KategoriBaru": [".ext1", ".ext2", ".ext3"],
+    # ... kategori lainnya
+}
+```
+⚠️ Important Notes
+```
+Script hanya memindahkan file, tidak menghapus
+File yang sedang digunakan mungkin tidak bisa dipindahkan
+Selalu backup data penting sebelum menjalankan pertama kali
+File hidden (diawali titik) akan di-skip
+```
+
+🐛 Troubleshooting
+```
+Error: "Permission denied"
+
+Tutup aplikasi yang mungkin menggunakan file tersebut
+
+Jalankan command prompt sebagai administrator (Windows)
+
+Error: Python not found
+
+Pastikan Python sudah terinstall dan ada di PATH
+
+Gunakan python3 instead of python pada beberapa sistem
+```
+🤝 Contributing
+Silakan fork repository ini dan buat pull request untuk improvements.
+
+📄 License
+MIT License - bebas digunakan untuk personal maupun komersial.
